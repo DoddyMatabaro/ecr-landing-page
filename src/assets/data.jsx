@@ -1,5 +1,5 @@
 import React from 'react';
-import myLogo from '/logo1.png';
+import myLogo from './logo1.png';
 import presentation from './videos/test.mp4'
 
 import {
@@ -36,9 +36,9 @@ export const leftLinks = [
 
 export const hero = {
       devise: "ICI NOUS ALLONS ECRIRE LA DEVISE DE L'ENTREPRISE",
-      about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid"
+      about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid",
       image:'./images/background.png',
-      client: 30,
+      client:30,
       projet:200,
       button_label: "BUILD YOUR PROJET",
 
@@ -153,7 +153,7 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/'
+      profile: './images/testimonials/',
       testimonials:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
@@ -162,7 +162,7 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/'
+      profile: './images/testimonials/',
       testimonials:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
@@ -171,7 +171,7 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/'
+      profile: './images/testimonials/',
       testimonials:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
@@ -180,7 +180,7 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/'
+      profile: './images/testimonials/',
       testimonials:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
@@ -213,14 +213,14 @@ export  const chooseUs = [
   ];
 
   export const contact ={
-    title: "Qu'est  ce que tu attends? Parles nous de ton projet!"
+    title: "Qu'est  ce que tu attends? Parles nous de ton projet!",
     button_label: "Constactez-nous",
   }
 
   export const footer =
     {
       ecr:{
-        logo:myLogo;
+        logo:myLogo,
         adresse: "Av Nyamugo, Q. Nyamugo, ....",
         adresse: "matabaro@gmail.com",
         socials: social,
