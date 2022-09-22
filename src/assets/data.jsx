@@ -1,6 +1,7 @@
 import React from 'react';
 import myLogo from './logo1.png';
-import presentation from './videos/test.mp4'
+import heroImage from './images/background.jpg';
+// import presentation from './videos/test.mp4'
 
 import {
     FaBehance,
@@ -16,7 +17,7 @@ import {
   } from 'react-icons/fa';
 
 export const logo  = myLogo;
-export const video  = presentation;
+// export const video  = presentation;
 
 export const leftLinks = [
   {
@@ -35,9 +36,9 @@ export const leftLinks = [
 ];
 
 export const hero = {
-      devise: "ICI NOUS ALLONS ECRIRE LA DEVISE DE L'ENTREPRISE",
+      devise: "ICI NOUS ALLONS ECRIRE LA DEVISE DE L'ENTREPRISE, UN MOT QUI NOUS SERT DE MOTIVATION",
       about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid",
-      image:'./images/background.png',
+      image:heroImage,
       client:30,
       projet:200,
       button_label: "BUILD YOUR PROJET",
