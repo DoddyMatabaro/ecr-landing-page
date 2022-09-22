@@ -1,9 +1,15 @@
 import React from 'react'
 import {hero} from '../assets/data';
+// import ReactArcText from 'react-arc-text';
 
 function Hero() {
+  let text = '';
+  let classFont = '';
+  let direction = 1;
+  let arc = 150;
+
   return (
-    <section className='h-screen bg-black px-10 overflow-hidden mb-10'>
+    <section className='h-screen bg-black px-10 overflow-hidden p-4'>
       <article className='flex gap-16 h-1/2 py-10 text-justify'>
             <p className='w-1/2 text-white text-left text-3xl bold'>
                 {hero.devise}
@@ -18,17 +24,20 @@ function Hero() {
                 </div>
             </div>
       </article>
-      <article>
-          <div className='bg-yellow w-[5rem] h-[5rem] rounded-full'>
-            <div>
-              <p>BUILD YOUR PROJECT</p>
-              <div></div>
-            </div>
-              <div className="bg-black w-4 h-4"></div>
-          </div>
-          <div className='rounded-t-[60px] overflow-y-hidden mb-2'>
-               <img src={hero.image} alt="hero section" className='h-1/2'/>
-          </div>
+      <article className='h-full rounded-t-[50px] mb-10'>
+          <div className='bg-hero bg-center h-full rounded-t-[60px] flex flex-row-reverse'> 
+              <div className=' bg-yellow w-[5rem] h-[5rem] rounded-[50%] flex justify-center align-center text-center -m-4'>
+              {/* <ReactArcText
+                  text={text}
+                  direction={direction}
+                  arc={arc}
+                  class={classFont}
+                  /> */}
+                  {/* <div className="bg-black w-4 h-4 rounded-full m-7"></div> */}
+              </div>
+               {/* <img src={hero.image} alt="hero section" className='h-1/2'/> */}
+           </div>
+
       </article>
     </section>
   )

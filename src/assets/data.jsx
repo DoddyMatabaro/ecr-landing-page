@@ -223,7 +223,7 @@ export  const chooseUs = [
       ecr:{
         logo:myLogo,
         adresse: "Av Nyamugo, Q. Nyamugo, ....",
-        adresse: "matabaro@gmail.com",
+        mail: "matabaro@gmail.com",
         socials: social,
       },
       features: [
