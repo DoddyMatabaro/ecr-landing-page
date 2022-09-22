@@ -37,7 +37,7 @@ export const leftLinks = [
 
 export const hero = {
       devise: "ICI NOUS ALLONS ECRIRE LA DEVISE DE L'ENTREPRISE, UN MOT QUI NOUS SERT DE MOTIVATION",
-      about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid",
+      about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid lorem ipsum dolor sit amet, consectetur adipiscing elit    non proident, sed diam nonumy eirmod tempor invid",
       image:heroImage,
       client:30,
       projet:200,

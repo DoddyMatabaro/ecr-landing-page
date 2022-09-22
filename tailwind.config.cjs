@@ -13,7 +13,12 @@ module.exports = {
       white_varient: '#F8F8F8',
       'white': '#ffffff',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero': "url('/src/assets/images/background.jpg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      }
+    },
   },
   plugins: [],
 }
