@@ -1,18 +1,17 @@
 import React, { useState, useContext, useReducer} from 'react';
-import { data } from '../data';
+
 
 const AppContext = React.createContext();
 
 export function AppProvider({ initialState, reducer, children}){
-
     return(
-        <AppContext.provider 
+        <AppContext.Provider 
                 value={
                     useReducer(reducer, initialState)
                 }
         >
             {children}
-        </AppContext.provider>
+        </AppContext.Provider>
     )
 
 };

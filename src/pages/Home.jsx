@@ -20,7 +20,7 @@ function Home() {
         <Projects/>
         <Presentation/>
         <Testimonials/>
-        {/* <FAQ/> */}
+        <FAQ/>
         <Contact/>
         <Footer/>
     </div>
