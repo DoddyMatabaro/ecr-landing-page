@@ -189,26 +189,29 @@ export  const chooseUs = [
   
   
 
-  export const FAQ = [
+  export const FAQBase = [
     {
       id: 1,
       question: 'Quel est le prix de votre service',
-      answer: "tout depends de ce qu'on vas utiliser",
+      answer: "tout depends de ce qu'on vas utiliser, tout depends de ce qu'on vas utiliser lorem ipsum dolor sit amet, consectetur adipiscing elit essere  nonumy euismod tempor  invid id tempor invid id tempor invid ",
     },
     {
       id: 2,
       question: 'Quel est le prix de votre service',
-      answer: "tout depends de ce qu'on vas utiliser",
+      answer: "tout depends de ce qu'on vas utiliser, tout depends de ce qu'on vas utiliser lorem ipsum dolor sit amet, consectetur adipiscing elit essere  nonumy euismod tempor  invid id tempor invid id tempor invid ",
+
     },
     {
       id: 3,
       question: 'Quel est le prix de votre service',
-      answer: "tout depends de ce qu'on vas utiliser",
+      answer: "tout depends de ce qu'on vas utiliser, tout depends de ce qu'on vas utiliser lorem ipsum dolor sit amet, consectetur adipiscing elit essere  nonumy euismod tempor  invid id tempor invid id tempor invid ",
+     
     },
     {
       id: 4,
       question: 'Quel est le prix de votre service',
-      answer: "tout depends de ce qu'on vas utiliser",
+      answer: "tout depends de ce qu'on vas utiliser, tout depends de ce qu'on vas utiliser lorem ipsum dolor sit amet, consectetur adipiscing elit essere  nonumy euismod tempor  invid id tempor invid id tempor invid ",
+     
     },
   
   ];
@@ -223,7 +226,7 @@ export  const chooseUs = [
       ecr:{
         logo:myLogo,
         adresse: "Av Nyamugo, Q. Nyamugo, ....",
-        adresse: "matabaro@gmail.com",
+        mail: "matabaro@gmail.com",
         socials: social,
       },
       features: [
