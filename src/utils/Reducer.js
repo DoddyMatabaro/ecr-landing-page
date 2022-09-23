@@ -1,7 +1,7 @@
 import { reducerCases } from "./constants";
 
 export const initialState = {
-    faq: false,
+    faq: null,
 }
 
 const reducer =(state, action) =>{
