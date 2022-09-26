@@ -1,6 +1,7 @@
 import React from 'react';
 import myLogo from './logo1.png';
 import heroImage from './images/background.jpg';
+import profil from './images/testimonials/profile.jpg';
 // import presentation from './videos/test.mp4'
 
 import {
@@ -85,7 +86,7 @@ export const projects = [
     id: 1,
     title: "Titre ",
     description: "desciption du projet",
-    title: 'Premiere dimension',
+
     image1: "./src/assets/images/projets/",
     image2: "./src/assets/images/projets/",
     image3: "./src/assets/images/projets/",
@@ -154,8 +155,8 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil ,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
     {
@@ -163,8 +164,8 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
     {
@@ -172,8 +173,8 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
     {
@@ -181,10 +182,10 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
-    },
+    }
   ];
   
   
