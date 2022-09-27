@@ -7,7 +7,7 @@ function FAQ() {
   const [{ faq } , dispatch] = globalContext();
 
   return (
-    <section className='h-screen bg-yellow px-10 py-20 flex flex-col justify-center gap-10'>
+    <section className='h-screen bg-yellow px-10 py-10 flex flex-col justify-center gap-10'>
           <div className='flex flex-row gap-4 '>
                 <div className='bg-black h-4 w-3 mt-5 '></div>
                 <h1 className="text-5xl font-bold ">FREQUENTLY ASKED QUESTIONS</h1>

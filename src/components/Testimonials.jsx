@@ -13,42 +13,45 @@ function Testimonials() {
       dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, lastIndex })
     }
     if (testimonial_index > lastIndex) {
-      dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, testimonial_index: 0 })
+      let value = 0
+      dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, value })
     }
   }, [testimonialsData, testimonial_index]);
 
   useEffect(() => {
     let slider = setInterval(() => {
-      dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, testimonial_index: testimonial_index + 1 })
+      let value = testimonial_index + 1;
+      console.log("Avant : " + testimonial_index);
+      dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, value })
     }, 5000);
+    console.log("Apres : " + testimonial_index);
     return () => {
       clearInterval(slider);
     };
   }, [testimonial_index]);
 
+  console.log(testimonial_index);
   return (
-    <section className='h-screen px-10 my-20 mx-auto bg-grey_varient'>
-                <div className='flex flex-row'>
+    <section className='h-screen w-[100vw] py-10 px-10 bg-grey_varient max-w-[1170px]'>
+                <div className='flex flex-row gap-4'>
                     <div className='bg-black h-4 w-3 mt-5'></div>
-                    <h1 className="text-5xl font-bold ">CE QUE NOS CLIENT DISENT </h1>
+                    <h1 className="text-5xl font-bold ">CE QUE DISENT NOS CLIENTS  </h1>
                 </div>
-                <div className="mx-0 mt-16 text-center relative overflow-hidden w-4/5 ">
+                <div className="mt-16 text-center relative overflow-hidden h-[450px] w-[100%] flex justify-center align-middle ">
                     { testimonialsData.map((elt, index)=>{
-                      let position = 'translate-x-full';
+                      let position = 'nextSlide';
                       if (index === testimonial_index) {
-                        position = 'translate-x-0 opacity-100';
+                        position = 'activeSlide'; 
                       }
                       if(
                         index === testimonial_index - 1 ||
                         (testimonial_index === 0 && index === testimonialsData.length - 1)
                       ) {
-                        position = '-translate-x-full';
-                      }
-                      let classesCard = `absolute top-0 left-0 w-full h-full opacity-0 transition-all ${position}`
-                      console.log(classesCard); 
+                        position = 'lastSlide';
+                      } 
                       return(
-                          <article className=" w-full h-full opacity-0 " key={elt.id}>
-                                    <h1>{elt.organisation}</h1>
+                          <article className={'slide '+position} key={elt.id}>
+                                    <h1 className='font-bold text-2xl mb-4 uppercase' >{elt.organisation}</h1>
                                     <img src={elt.profile} alt={elt.person} className=" rounded-[50%] mb-4 w-40 h-40 
                                         object-cover border-4 divide-solid shadow-black " />
                                     <h4 className="uppercase text-black mb-1 ">{elt.person}</h4>
@@ -58,10 +61,12 @@ function Testimonials() {
                           </article>
                       );
                     })}
-                               <button className="text-black absolute t-[200px] translate-y-1/2 bg-yellow w-5 h-5 grid place-items-center border-none text-[1rem] rounded-1 cursor-pointer transition-all hover:bg-black hover:text-yellow left-0" onClick={() =>dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, testimonial_index: testimonial_index - 1 })}>
+                               <button className="text-black absolute top-[200px] -translate-y-1/2 w-10 h-10 grid place-items-center border-none text-[2rem] rounded-1 cursor-pointer transition-all hover:bg-black hover:text-yellow left-0"
+                                       onClick={() =>dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, testimonial_index: testimonial_index - 1 })}>
                                   <FiChevronLeft />
                                 </button>
-                                <button className="text-black absolute t-[200px] translate-y-1/2 bg-yellow w-5 h-5 grid place-items-center border-none text-[1rem] rounded-1 cursor-pointer transition-all hover:bg-black hover:text-yellow right-0" onClick={() =>dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, testimonial_index: testimonial_index + 1 })}>
+                                <button className="text-black absolute top-[200px] -translate-y-1/2 w-10 h-10 grid place-items-center border-none text-[2rem] rounded-1 cursor-pointer transition-all hover:bg-black hover:text-yellow right-0" 
+                                          onClick={() =>dispatch({ type: reducerCases.SET_TESTIMONIAL_INDEX, testimonial_index: testimonial_index + 1 })}>
                                     <FiChevronRight />
                                 </button>
                  </div>
