@@ -1,6 +1,7 @@
 import React from 'react';
 import myLogo from './logo1.png';
 import heroImage from './images/background.jpg';
+import heroImage2 from './images/ECR/hero.jpg';
 import profil from './images/testimonials/profile.jpg';
 // import presentation from './videos/test.mp4'
 
@@ -37,9 +38,9 @@ export const leftLinks = [
 ];
 
 export const hero = {
-      devise: "ICI NOUS ALLONS ECRIRE LA DEVISE DE L'ENTREPRISE, UN MOT QUI NOUS SERT DE MOTIVATION",
+      devise: "f",
       about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid lorem ipsum dolor sit amet, consectetur adipiscing elit    non proident, sed diam nonumy eirmod tempor invid",
-      image:heroImage,
+      image:heroImage2,
       client:30,
       projet:200,
       button_label: "BUILD YOUR PROJET",

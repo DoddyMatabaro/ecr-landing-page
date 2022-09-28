@@ -9,7 +9,7 @@ function Hero() {
   let arc = 150;
 
   return (
-    <section className='h-screen bg-black px-10 overflow-hidden p-4'>
+    <section className='h-screen bg-black px-10 overflow-hidden p-4 mb-4'>
       <article className='flex gap-16 h-1/2 py-10 text-justify'>
             <p className='w-1/2 text-white text-left text-3xl bold'>
                 {hero.devise}
@@ -24,9 +24,9 @@ function Hero() {
                 </div>
             </div>
       </article>
-      <article className='h-full rounded-t-[50px] mb-10'>
-          <div className='bg-hero bg-center h-full rounded-t-[60px] flex flex-row-reverse'> 
-              <div className=' bg-yellow w-[5rem] h-[5rem] rounded-[50%] flex justify-center align-center text-center -m-4'>
+      <article className='rounded-t-[50px] mb-10 h-1/2 w-[100%]'>
+          <div className='flex flex-row-reverse'> 
+              <div className='z-10 absolute bg-yellow w-[5rem] h-[5rem] rounded-[50%] flex justify-center align-center text-center -m-4'>
               {/* <ReactArcText
                   text={text}
                   direction={direction}
@@ -34,8 +34,9 @@ function Hero() {
                   class={classFont}
                   /> */}
                   {/* <div className="bg-black w-4 h-4 rounded-full m-7"></div> */}
+                  
               </div>
-               {/* <img src={hero.image} alt="hero section" className='h-1/2'/> */}
+                  <img src={hero.image} alt="hero section" className='object-fill relative h-full rounded-t-[100px]' />
            </div>
 
       </article>
