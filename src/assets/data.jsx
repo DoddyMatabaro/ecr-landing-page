@@ -38,11 +38,11 @@ export const leftLinks = [
 ];
 
 export const hero = {
-      devise: "f",
-      about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid lorem ipsum dolor sit amet, consectetur adipiscing elit    non proident, sed diam nonumy eirmod tempor invid",
+      devise: "Réalisez proprement  votre projet de rêve avec une nouvelle expérience.",
+      about_info: "ECR sarl est une société spécialisée dans le génie civil : construction de bâtiments  complets, construction d’autres ouvrages de génie civil, commerce de gros d’autres équipements industriels et fournitures diverses.",
       image:heroImage2,
-      client:30,
-      projet:200,
+      client:20,
+      projet:50,
       button_label: "BUILD YOUR PROJET",
 
     };
