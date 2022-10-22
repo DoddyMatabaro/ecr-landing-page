@@ -1,7 +1,9 @@
 import { reducerCases } from "./constants";
-
+import { testimonials } from "../assets/data";
 export const initialState = {
     faq: null,
+    testimonialsData: testimonials,
+    testimonial_index: 0,
 }
 
 const reducer =(state, action) =>{
@@ -10,6 +12,16 @@ const reducer =(state, action) =>{
             return{
                 ...state,
                 faq: action.value
+            }
+        case reducerCases.SET_TESTIMONIALS_DATA: 
+            return{
+                ...state,
+                testimonialsData: action.value
+            }
+        case reducerCases.SET_TESTIMONIAL_INDEX: 
+            return{
+                ...state,
+                testimonial_index: action.value
             }
         default:  
             return state;

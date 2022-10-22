@@ -1,6 +1,8 @@
 import React from 'react';
 import myLogo from './logo1.png';
 import heroImage from './images/background.jpg';
+import heroImage2 from './images/ECR/hero.jpg';
+import profil from './images/testimonials/profile.jpg';
 // import presentation from './videos/test.mp4'
 
 import {
@@ -36,11 +38,11 @@ export const leftLinks = [
 ];
 
 export const hero = {
-      devise: "ICI NOUS ALLONS ECRIRE LA DEVISE DE L'ENTREPRISE, UN MOT QUI NOUS SERT DE MOTIVATION",
-      about_info: "lorem ipsum dolor sit amet, consectetur adipiscing elit   non proident, sed diam nonumy eirmod tempor invid lorem ipsum dolor sit amet, consectetur adipiscing elit    non proident, sed diam nonumy eirmod tempor invid",
-      image:heroImage,
-      client:30,
-      projet:200,
+      devise: "Réalisez proprement  votre projet de rêve avec une nouvelle expérience.",
+      about_info: "ECR sarl est une société spécialisée dans le génie civil : construction de bâtiments  complets, construction d’autres ouvrages de génie civil, commerce de gros d’autres équipements industriels et fournitures diverses.",
+      image:heroImage2,
+      client:20,
+      projet:50,
       button_label: "BUILD YOUR PROJET",
 
     };
@@ -85,7 +87,7 @@ export const projects = [
     id: 1,
     title: "Titre ",
     description: "desciption du projet",
-    title: 'Premiere dimension',
+
     image1: "./src/assets/images/projets/",
     image2: "./src/assets/images/projets/",
     image3: "./src/assets/images/projets/",
@@ -154,8 +156,8 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil ,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
     {
@@ -163,8 +165,8 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
     {
@@ -172,8 +174,8 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     },
     {
@@ -181,10 +183,10 @@ export  const chooseUs = [
       organisation: 'entreprise 1',
       person: "Axel Murhula",
       function: "PGB",
-      profile: './images/testimonials/',
-      testimonials:
+      profile: profil,
+      testimonial:
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
-    },
+    }
   ];
   
   
